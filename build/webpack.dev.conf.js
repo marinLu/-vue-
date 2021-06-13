@@ -38,9 +38,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       poll: config.dev.poll,
     }
   },
-  configureWebpack: {
-    devtool: "source-map",
-  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
